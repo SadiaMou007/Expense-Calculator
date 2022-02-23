@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Calculator</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header section -->
+    <header class="text-center mt-2 mb-4">
+      <h1 class="heading">
+        Expense Calculator
+        <span></span>
+      </h1>
+    </header>
+    <main class="container">
+      <div class="row g-2">
+        <div
+          class="col-lg-6 col-md-12 col-sm-12 col-12 d-flex justify-content-center align-items-center"
+        >
+          <!-- image -->
+          <img class="img-fluid b-img" src="images/img1.jpg" alt="" />
+        </div>
+        <div
+          class="col-lg-6 col-md-12 col-sm-12 col-12 d-flex justify-content-center align-items-center flex-column"
+        >
+          <!--  income and expense-->
+          <section
+            class="bg-light d-flex justify-content-center align-items-center flex-column p-2"
+          >
+            <h5 class="fw-bold">Income</h5>
+            <p>
+              Income:
+              <input
+                class="mx-2 text-field p-1"
+                id="income"
+                type="text"
+                placeholder="Enter Total Income"
+              />
+            </p>
+            <h5 class="my-2 fw-bold">Expense</h5>
+            <p class="mt-3">
+              Food:
+              <input
+                class="mx-2 text-field p-1"
+                id="food-exp"
+                type="text"
+                placeholder="Enter Food Cost"
+              />
+            </p>
+            <p class="">
+              Rent:
+              <input
+                class="mx-2 text-field p-1"
+                id="rent-exp"
+                type="text"
+                placeholder="Enter Rent Cost"
+              />
+            </p>
+            <p>
+              Clothes:
+              <input
+                class="mx-2 text-field p-1"
+                id="cloths-exp"
+                type="text"
+                placeholder="Enter Clothes Cost"
+              />
+            </p>
+            <button
+              class="btn text-white fw-bold px-5 button"
+              id="calculate-btn"
+            >
+              Calculate
+            </button>
+            <h5 class="my-3 fw-bold">
+              Total Expenses: <span id="total-expense">00</span>
+            </h5>
+            <h5 class="mb-3 fw-bold">Balance: <span id="balance">00</span></h5>
+
+            <!-- savings -->
+            <p>
+              Save:
+              <input
+                type="text"
+                placeholder=" Percentage"
+                class="saving-input text-field p-1"
+                id="save-percent"
+              />
+              %
+              <button
+                class="btn text-white fw-bold px-2 button mx-2"
+                id="save-btn"
+              >
+                Save
+              </button>
+            </p>
+            <p>Saving Amount: <span id="saving-amount">00</span></p>
+
+            <p>Remaining Balance: <span id="remaining-balance">00</span></p>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- link script -->
+    <script src="js/app.js"></script>
+    <!-- bootstrap script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
